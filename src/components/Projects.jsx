@@ -16,7 +16,7 @@ const Projects = () => {
                         <h1 className='firacode text-xl underline'>{item.name}</h1>
                         <div className='grid grid-cols-3 p-2 w-full gap-6'>
                             {item.tools.map((item,index) => {
-                                return <button className='py-2 px-4 border-2 rounded-full hover:bg-textcolor hover:text-background transition-all duration-700' key={index}>{item}</button>
+                                return <button className='py-2 px-4 text-xs lg:text-sm border-2 rounded-full hover:bg-textcolor hover:text-background transition-all duration-700' key={index}>{item}</button>
                             })}
                         </div>
                         <p className='flex flex-col p-3 text-sm'><span className='firacode'>{item.name}</span>{item.des}</p>

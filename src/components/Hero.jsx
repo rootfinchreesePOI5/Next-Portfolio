@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
             {/* center */}
             <div className=' w-full flex justify-center items-center gap-[2.5rem]'>
-                <h1 className='firacode text-2xl'>{'My socials ---->'}</h1>
+                <h1 className='firacode text-2xl'>{'My socials'}</h1>
                 <div className='grid grid-cols-2 gap-4'>
                 {
                     socials.map((item, index) => {

@@ -27,7 +27,7 @@ const Contact = () => {
     }
   };
   return (
-    <div id='contact' className='py-[5rem] flex flex-col gap-[5rem]'>
+    <div id='contact' className='py-[5rem] flex flex-col gap-8 lg:gap-[5rem]'>
       <h1 className='heading firacode text-4xl '>./Contact Me....</h1>
       <form className='grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 items-center px-[5%]' onSubmit={onSubmit}>
         {/* left */}
@@ -36,7 +36,7 @@ const Contact = () => {
           <input className='p-2 px-[20px] firacode border-none  rounded-md text-textcolor h-[7vh] bg-primary' type="number"  name="email" required placeholder='Your Phone Number' />
           <input className='p-2 px-[20px] firacode border-none  rounded-md text-textcolor h-[7vh] bg-primary' type="email" placeholder='Your Email'/>
           <select className='p-2 px-[20px] firacode border-none  rounded-md text-textcolor h-[7vh] bg-primary' name='select' required>
-            <option className='bg-textcolor text-background' value=''>What kind of service do you want...</option>
+            <option className='bg-textcolor text-background' value=''>My Services</option>
             <option className='bg-textcolor text-background' value="frontend">Frontend</option>
             <option className='bg-textcolor text-background' value="backend">Backend</option>
             <option className='bg-textcolor text-background' value="fullstack">FullStack</option>

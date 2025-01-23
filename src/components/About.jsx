@@ -14,14 +14,14 @@ const About = () => {
                 <div className='mt-[5rem] flex flex-col gap-[8rem] lg:grid lg:grid-cols-2 lgjustify-between pt-[10%]'>
                     <div className='relative flex'>
                         <Image className='w-12 rounded-full' src={logo} alt='intro' />
-                        <div className="rounded-e-lg rounded-tl-lg absolute flex items-center gap-3 bottom-full left-[5%] bg-textcolor text-background p-5 ">
-                            <h1 className='firacode'>Hi! my name is <span className='text-purple-400'>InfiniteDev!</span></h1>
+                        <div className="rounded-e-lg rounded-tl-lg absolute flex items-center gap-3 bottom-full right-[20%] bg-textcolor text-background p-5 ">
+                            <h1 className='firacode'>Hi! my name is <br /> <span className='text-purple-400'>InfiniteDev!</span></h1>
                             <Image className='w-8' src={wave} alt='waving' />
                         </div>
-                        <div className='absolute top-full left-[5%] flex items-center gap-2 p-3'>
+                        <div className='absolute top-full  lg:left-[5%] flex items-center gap-2 mt-8 lg:p-3'>
                             <span className='w-5 h-5 bg-green-500 rounded-full border-2'></span>
-                            <label className='firacode'>Enter your Name:</label>
-                            <input onChange={(e) => setResult(e.target.value)} className='bg-transparent p-1 border-b-2  outline-none' type="text" placeholder='Write here...' />
+                            <label className='firacode text-sm lg:text-xl'>Enter your Name:</label>
+                            <input onChange={(e) => setResult(e.target.value)} className='bg-transparent p-1 border-b-2 w-[30%] ml-8 lg:w-[100%] outline-none' type="text" placeholder='Write here...' />
                         </div>
                     </div>
                     <div>

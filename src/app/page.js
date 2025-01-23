@@ -8,13 +8,15 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import './globals.css'
+import { useState } from "react";
 
 export default function Home() {
+      const [menu, setMenu] = useState(false);
   return (
     <AppProvider>
       <div>
-        <Navbar />
-        <div id='hero' className="py-[8rem] px-[8%] md:px-[6%] lg:px-[5%]">
+        <Navbar menu={menu} setMenu={setMenu} />
+        <div id='hero' style={menu === true ? {display:'none'} : {display:"flex"}}  className="flex-col py-[8rem] px-[8%] md:px-[6%] lg:px-[5%]">
           <Hero />
           <About/>
           <Projects/>
