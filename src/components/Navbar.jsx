@@ -59,7 +59,7 @@ const Navbar = ({menu , setMenu}) => {
                 <Link className='transition-all duration-300 hover:text-purple-400' href={'#contact'} >Contact</Link>
             </ul>
 
-            <ul style={menu === false ? { transform: 'translateX(-105%)', transition: '0.5s ease' } : { transform: "translateX(-2%)", transition: '0.5s ease' }} className={`absolute bg-background text-textcolor h-[90vh] gap-6 flex flex-col top-[101%] lg:hidden sm:hidden justify-between w-full p-3 `}>
+            <ul style={menu === false ? { transform: 'translateX(-105%)', transition: '0.5s ease' } : { transform: "translateX(-2%)", transition: '0.5s ease' }} className={`absolute bg-background text-textcolor left-0 h-[85vh] gap-6 flex flex-col top-[101%] lg:hidden sm:hidden justify-between w-[105%] p-5 `}>
                 <li className='flex flex-col gap-4'>
                 <Link onClick={displayMenu} className='transition-all duration-300 hover:text-purple- w-[fit-content]' href={'#about'} >About</Link>
                 <Link onClick={displayMenu} className='transition-all duration-300 hover:text-purple-400 w-[fit-content]' href={'#projects'} >Projects</Link>
