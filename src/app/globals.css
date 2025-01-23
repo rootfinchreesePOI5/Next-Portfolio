@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #01030e;
+  --text-color: #ffffff;
+  --primary-color: #131313;
+  --main-color: #9618df;
+  --nav-color: rgba(0, 0, 0, 0.952);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f6f6f6;
+    --text-color: #020617;
+    --primary-color: #a6a6a6;
+    --main-color: #9618df;
+    --nav-color: rgba(255, 255, 255, 0.748);
+  }
+}
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+body {
+  color: var(--text-color);
+  background: var(--background);
+  font-family: "outfit";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* globals.css */
+.firacode {
+  font-family: var(--font-fira-code), monospace;
+}
+
+.hire-me{
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+  padding: 0.5rem;
+}
+
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+/* carousel */
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.custom-swiper {
+  overflow: hidden;
+}
+
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  color: white;
+}
+
+.custom-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-shadow{
+  box-shadow: 0 0 25px red;
+}
+
+.projects-item:nth-of-type(2){
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.projects-item:nth-of-type(2) img{
+  width: 80%;
+}
+
+#repo{
+  width: fit-content;
+}
+
+@media (max-width: 768px){
+  .projects-item:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+input::placeholder{
+  color: white;
+}
+
+textarea::placeholder{
+  color: white;
+}
