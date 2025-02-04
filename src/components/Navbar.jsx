@@ -68,7 +68,7 @@ const Navbar = ({menu , setMenu}) => {
                 </li>
                 <li className='flex flex-col items-center w-full gap-4'>
                    <Image className='w-[45px] h-[45px] p-2 rounded-full bg-zinc-800' src={github} alt='version'/> 
-                   <p className='text-gray-600 firacode'>version 1.0.0.1</p>
+                   <p className='text-gray-600 firacode'>version 1.0.0.6</p>
                 </li>
             </ul>
 

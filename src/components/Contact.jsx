@@ -27,9 +27,9 @@ const Contact = () => {
     }
   };
   return (
-    <div id='contact' className='py-[5rem] flex flex-col gap-8 lg:gap-[5rem]'>
-      <h1 className='heading firacode text-4xl '>./Contact Me....</h1>
-      <form className='grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 items-center px-[5%]' onSubmit={onSubmit}>
+    <div id='contact' className='flex flex-col gap-8 lg:gap-[5rem]'>
+      <h1 className='heading firacode text-2xl md:text-4xl '>./Contact Me....</h1>
+      <form className='grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 items-center md:px-[5%]' onSubmit={onSubmit}>
         {/* left */}
         <div className='flex flex-col  gap-5 lg:justify-between h-full'>
           <input className='p-2 px-[20px] firacode border-none  rounded-md text-textcolor h-[7vh] bg-primary' type="name" name="name" required placeholder='Your Name' />

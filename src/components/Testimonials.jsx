@@ -4,7 +4,7 @@ import Clients from './Clients'
 
 const Testimonials = () => {
   return (
-    <div id='testimonials' className='flex flex-col items-center gap-[5rem] py-24'>
+    <div id='testimonials' className='flex flex-col items-center gap-[5rem] '>
       <Title/>
       <Clients/>
     </div>

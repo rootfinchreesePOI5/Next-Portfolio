@@ -16,7 +16,7 @@ export default function Home() {
     <AppProvider>
       <div>
         <Navbar menu={menu} setMenu={setMenu} />
-        <div id='hero' style={menu === true ? {display:'none'} : {display:"flex"}}  className="flex-col py-[8rem] px-[8%] md:px-[6%] lg:px-[5%]">
+        <div id='hero' style={menu === true ? {display:'none'} : {display:"flex"}}  className="flex-col py-[5rem] md:py-[8rem] px-[8%] md:px-[6%] lg:px-[5%] gap-[5rem]">
           <Hero />
           <About/>
           <Projects/>

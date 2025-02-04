@@ -10,10 +10,10 @@ const Hero = () => {
     const { theme } = useContext(AppContext);
     
     return (
-        <div  className='flex flex-col gap-[8rem] mt-9' >
+        <div  className='flex flex-col gap-[4rem] md:gap-[8rem] mt-9' >
             {/* top */}
             <div className='grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center gap-8 '>
-                <h1 className='text-2xl md:text-4xl lg:text-8xl firacode'>Full-Stack <span className='firacode lg:hidden'>DEVELOPER</span></h1>
+                <h1 className='text-2xl md:text-4xl lg:text-8xl firacode'>Full-Stack <span className='firacode md:hidden'>Developer</span></h1>
                 <div className="flex items-center lg:justify-end">
                     <Link target='_blank' href={'https://github.com/rootfinchreesePOI5?tab=repositories'} className=' flex items-center justify-between py-2 px-7 firacode text-2xl rounded-full w-full lg:w-[65%] bg-textcolor  text-background cursor-pointer hover:bg-maincolor transition-all duration-700 hover:text-textcolor'>
                         Projects
