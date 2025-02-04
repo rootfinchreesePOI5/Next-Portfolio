@@ -5,7 +5,7 @@ const AppContext = createContext()
 
 const AppProvider = ({children}) => {
 
-    const [theme , setTheme] = useState('dark');
+    const [theme , setTheme] = useState('light');
     const value = {
         theme,
         setTheme

@@ -13,7 +13,7 @@ const Hero = () => {
         <div  className='flex flex-col gap-[8rem] mt-9' >
             {/* top */}
             <div className='grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center gap-8 '>
-                <h1 className='text-2xl md:text-4xl lg:text-8xl firacode'>Full-Stack</h1>
+                <h1 className='text-2xl md:text-4xl lg:text-8xl firacode'>Full-Stack <span className='firacode lg:hidden'>DEVELOPER</span></h1>
                 <div className="flex items-center lg:justify-end">
                     <Link target='_blank' href={'https://github.com/rootfinchreesePOI5?tab=repositories'} className=' flex items-center justify-between py-2 px-7 firacode text-2xl rounded-full w-full lg:w-[65%] bg-textcolor  text-background cursor-pointer hover:bg-maincolor transition-all duration-700 hover:text-textcolor'>
                         Projects
@@ -22,7 +22,7 @@ const Hero = () => {
 
                 </div>
                 <p style={{ wordSpacing: '2px' }} className='text-2xl'>My goal is to <i className='text-xl my-4 firacode  text-purple-800' style={{ fontWeight: '200' }}>write maintainable, clean </i>and <i className='text-xl m-4 firacode  text-purple-700' style={{ fontWeight: '200' }}>understandable code</i>to a process where development becomes enjoyable</p>
-                <h1 className='text-2xl md:text-4xl lg:text-8xl firacode'>Developer</h1>
+                <h1 className='hidden lg:flex text-2xl md:text-4xl lg:text-8xl firacode'>Developer</h1>
             </div>
             {/* center */}
             <div className=' w-full flex justify-center items-center gap-[2.5rem]'>
